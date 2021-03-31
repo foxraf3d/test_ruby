@@ -24,8 +24,21 @@ class CalculatorPage
     $driver.find_element(@mappings['button_Sum']).click
   end
 
-  def assert_msg(result)
-    assert_equal result, get_result
+  def click_button_sub
+    $driver.find_element(@mappings['button_Sub']).click
+  end
+
+  def click_button_mult
+    $driver.find_element(@mappings['button_Mult']).click
+  end
+
+  def click_button_div
+    $driver.find_element(@mappings['button_Div']).click
+  end
+
+  def assert_msg
+    assert_not_nil get_result
+    assert_not_equal 0, get_result
   end
 
 end

@@ -31,5 +31,5 @@
     Cenario: Dividir
       E informo o primeiro número
       E informo o segundo número
-      Quando clico no botão de subtrair
+      Quando clico no botão de dividir
       Entao vejo o resultado da operação

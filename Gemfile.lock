@@ -82,8 +82,12 @@ GEM
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2020.1104)
+    mini_portile2 (2.5.0)
     minitest (5.14.4)
     multi_test (0.1.2)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
     numerizer (0.1.1)
@@ -148,6 +152,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  ruby
   universal-darwin-20
 
 DEPENDENCIES
