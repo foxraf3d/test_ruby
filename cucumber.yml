@@ -1,0 +1,7 @@
+math_op: -t @operations --format html --out reports/report.html --format pretty --publish
+sum: -t @sum --format html --out reports/report.html --format pretty --publish
+sub: -t @sub --format html --out reports/report.html --format pretty --publish
+mul: -t @mul --format html --out reports/report.html --format pretty --publish
+div: -t @div --format html --out reports/report.html --format pretty --publish
+
+default: --publish

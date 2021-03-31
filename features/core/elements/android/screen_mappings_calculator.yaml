@@ -1,0 +1,15 @@
+textview_Resultado:
+  id: 'com.example.leonardomenezes.simplecalculatorandroid:id/android_result_text'
+edittext_Primeiro_Numero:
+  id: "com.example.leonardomenezes.simplecalculatorandroid:id/android_field_first_number"
+edittext_Segundo_Numero:
+  id: "com.example.leonardomenezes.simplecalculatorandroid:id/android_field_second_number"
+button_Sum:
+  id: "com.example.leonardomenezes.simplecalculatorandroid:id/android_button_sum"
+button_Sub:
+  id: 'com.example.leonardomenezes.simplecalculatorandroid:id/android_button_sub'
+button_Mult:
+  id: 'com.example.leonardomenezes.simplecalculatorandroid:id/android_button_mult'
+button_Div:
+  id: 'com.example.leonardomenezes.simplecalculatorandroid:id/android_button_div'
+

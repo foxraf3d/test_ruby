@@ -1,0 +1,14 @@
+textview_Resultado:
+  accessibility_id: 'apple_result_text'
+edittext_Primeiro_Numero:
+  accessibility_id: 'apple_first_input'
+edittext_Segundo_Numero:
+  accessibility_id: 'apple_second_input'
+button_Sum:
+  accessibility_id: 'apple-sum-button'
+button_Sub:
+  accessibility_id: 'apple-subtract-button'
+button_Mult:
+  accessibility_id: 'apple-multiply-button'
+button_Div:
+  accessibility_id: 'apple-divide-button'
