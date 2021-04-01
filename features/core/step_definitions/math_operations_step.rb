@@ -29,5 +29,5 @@ Quando('clico no botão de multiplicar') do
 end
 
 Quando('clico no botão de dividir') do
-  @cald.click_button_div
+  @calc.click_button_div
 end
