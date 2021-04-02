@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Seending Android Report Tests'){
             steps{
-                emailext body: ${FILE, path="reports/report.html"}', mimeType: 'text/html', replyTo: 'no-reply@jenkins.com', subject: 'Email Report of Android Tests', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
+                emailext body: ${FILE, path="reports/report.html"}, mimeType: 'text/html', replyTo: 'no-reply@jenkins.com', subject: 'Email Report of Android Tests', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
             }
         }  
     }
