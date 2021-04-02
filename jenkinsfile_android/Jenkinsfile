@@ -9,9 +9,7 @@ pipeline{
     }
     post{
         always{
-            emailext attachLog: true, body: '''Hi,
-
-We sending the log of a new build generated for Android tests''', subject: 'Reports - Build Tests for Android', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
+            emailext attachmentsPattern: ' ${FILE,path=”reports/report.html”}', body: 'See the report of android build', subject: 'Seending Reports - Android', to: 'foxraf3d@gmail.com;rafael_sistema27@gmail.com'
         } 
     }
 }
