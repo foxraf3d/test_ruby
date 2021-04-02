@@ -9,7 +9,7 @@ pipeline{
     }
     post{
         always{
-            emailext attachmentsPattern: ' ${FILE,path=”reports/report.html”}', body: 'See the report of android build', subject: 'Seending Reports - Android', to: 'foxraf3d@gmail.com;rafael_sistema27@gmail.com'
+            emailext attachmentsPattern: ' ${FILE,path=”reports/report.html”}', body: 'See the report of android build', subject: 'Seending Reports - Android', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
         } 
     }
 }
