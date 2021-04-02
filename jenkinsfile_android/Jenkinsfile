@@ -9,7 +9,7 @@ pipeline{
     }
     post{
         always{
-            emailext attach: '${FILE, path="reports/report.html"}', body: 'See the attach' , mimeType: 'text/html', replyTo: 'no-reply@jenkins.com', subject: 'Email Report of Android Tests', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
+            emailext attachments: '${FILE, path="reports/report.html"}', body: 'See the attach' , mimeType: 'text/html', replyTo: 'no-reply@jenkins.com', subject: 'Email Report of Android Tests', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
         }
     }
 }
