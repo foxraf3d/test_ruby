@@ -1,15 +1,15 @@
 pipeline{
     agent any
     stages{
-        stage('Run Tests Android'){
+        stage('Run Android Tests'){
             steps{
                 sh "cucumber -p math_op PLATFORM_NAME='android'"
             }
+        }
+        stage('Seending Android Report Tests'){
+            steps{
+                emailext body: 'readFile("reports/report.html")', mimeType: 'text/html', replyTo: 'no-reply@jenkins.com', subject: 'Email Report of Android Tests', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
+            }
         }  
-    }
-    post{
-        always{
-            emailext body: 'readFile("reports/report.html")', mimeType: 'text/html', replyTo: 'no-reply@jenkins.com', subject: 'Email Report of Android Tests', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
-        } 
     }
 }
