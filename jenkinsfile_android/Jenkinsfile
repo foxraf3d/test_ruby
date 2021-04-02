@@ -9,7 +9,7 @@ pipeline{
     }
     post{
         always{
-            emailext attachmentsPattern: ' ${FILE,path=”reports/report.html”}', body: 'See the report of android build', subject: 'Seending Reports - Android', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
+            emailext body: 'readFile("reports/report.html")', mimeType: 'text/html', replyTo: 'no-reply@jenkins.com', subject: 'Email Report of Android Tests', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
         } 
     }
 }
