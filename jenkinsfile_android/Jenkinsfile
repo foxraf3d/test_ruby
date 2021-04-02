@@ -7,4 +7,11 @@ pipeline{
             }
         }  
     }
+    post{
+        always{
+            emailext attachLog: true, body: '''Hi,
+
+We sending the log of a new build generated for Android tests''', subject: 'Reports - Build Tests for Android', to: 'foxraf3d@gmail.com;rafael_sistema27@hotmail.com'
+        } 
+    }
 }
